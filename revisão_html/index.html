@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+
+	<body>
+		
+		<!-- Headers -->
+		<h1> Header 1 </h1>
+		<h2> Header 2 </h2>
+		<h3> Header 3 </h3>
+		<h4> Header 4 </h4>
+		<h5> Header 5 </h5>
+		<h6> Header 6 </h6>
+		
+		
+		<!--Paragraph -->
+		<p> Paragraph </p>
+		
+		<!-- Style -->
+		<h1 style="color:orange">  Header 1 - Orange </h1>
+		<p style="font-family:courier"> Paragraph - font-family -> courier </p>
+		<h2 style="background-color:orange"> Header 2 - Background Orange </h2>
+		<h1 style="color:orange; font-family:courier; background-color: black; text-align:center">  Header 1 - Orange </h1>
+		
+		<!-- Bold, Italics, underline and more -->
+		<p> This is an <b>Bold</b> text </p>
+		<p> This is an <strong>Strong</strong> text </p>
+		<p> This is an <u>Underline</u> Text </p>
+		<p> This is an <i>Italics</i> text </p>
+		<p> This is an <em>Emphasis</em> text </p>
+		
+		<p> This is an <b><i><u> BoldItalicsUnderline </u></i></b> text</p>
+		
+		<p> This is an <sub>sub</sub> text </p>
+		
+		<p> This is an <sup>sup</sup> text </p>
+		
+		<p> This is an <del>delete</del> text </p>
+		
+		<!-- Setting up a link -->
+		<a href="http://www.google.com">Google Site</a>
+		
+		<br/><br/>
+		<!-- Adding an image  -->
+		<img src="https://www.google.pt/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="100"/>
+		
+		<br/>
+		<!-- Adding a link to the image  -->
+		<a href="http://www.google.com">	
+		<img src="https://www.google.pt/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="100"/>
+		</a>
+		
+		<!-- Lists -->
+		<p> This is an un-ordered list</p>
+		<ul>
+			<li> Item 1 </li>
+			<li> Item 2 </li>
+			<li> Item 3 </li>
+		</ul>
+		
+		<p> This is an ordered list</p>
+		<ol>
+			<li> Item 1 </li>
+			<li> Item 2 </li>
+			<li> Item 3 </li>
+		</ol>
+		
+		<!-- -->
+		<ol>
+			<li> Item 1 </li>
+				<ul>
+					<li> Item 1.1 </li>
+					<li> Item 1.2 </li>
+				</ul>
+			<li> Item 2 </li>
+				<ol>
+				<li> Item 2.1 </li>
+				<li> Item 2.2 </li>
+				</ol>
+			<li> Item 3 </li>
+		</ol>
+		
+		<!-- -->
+		<dl>
+			<dt> Item 1 </dt>
+				<dd> Item 1.1 </dd>
+			<dt> Item 2 </dt>
+				<dd> Item 2.1 </dd>
+				<dd> Item 2.2 </dd>
+		</dl>
+
+		<!-- Tables -->
+		<table border="2" style="text-align:center; padding:5px">
+			<th>    </th>
+			<th> 01 </th>
+			<th> 02 </th>
+			<th> 03 </th>
+			<th> 04 </th>
+			<tr>
+				<th> 01 </th>
+				<td> 01 </td>
+				<td> 02 </td>
+				<td> 03 </td>
+				<td> 04 </td>
+			</tr>
+			<tr>
+				<th> 02 </th>
+				<td> 02 </td>
+				<td> 04 </td>
+				<td> 06 </td>
+				<td> 08 </td>
+			</tr>
+			<tr>
+				<th> 03 </th>
+				<td> 03 </td>
+				<td> 06 </td>
+				<td> 09 </td>
+				<td> 12 </td>
+			</tr>
+			<tr>
+				<th> 04 </th>
+				<td> 04 </td>
+				<td> 08 </td>
+				<td> 12 </td>
+				<td> 16 </td>
+			</tr>
+		</table>
+		
+		
+		<!-- Forms  -->
+		<h1> Forms </h1>
+		<p> This is a form </p>
+		<form>
+			<p>What is your quest? <input type="text" name="quest"/> </p>
+			<p>What is your favorite color? <input type="text" name="color"/> </p>
+			<p>What is the speed of a bird? <input type="number" name="speed"/> </p>
+			<p>Email: <input type="email" name="email"/> </p>
+			<p>Password: <input type="password" name="pass"/> </p>
+			<p>Date: <input type="date" name="date"/> </p>
+			<p><input type="file" name="file"/></p>
+			<input type="Button" value="Button" name="button"/>
+		</form>
+		
+		<p>Check Box</p>
+		<form>
+			<p>Input: <input type="checkbox" name="input"/></p>
+			<p>Input: <input type="checkbox" name="input"/></p>
+			<p>Input: <input type="checkbox" name="input"/></p>
+			<p>Input: <input type="checkbox" name="input"/></p>
+		</form>
+		
+		<br/>
+		
+		<p>Ragio Button</p>
+		<form>
+			<p>Input: <input type="radio" name="input"/></p>
+			<p>Input: <input type="radio" name="input"/></p>
+			<p>Input: <input type="radio" name="input"/></p>
+			<p>Input: <input type="radio" name="input"/></p>
+		</form>
+		
+		<br/>
+		
+		<p>Submit</p>
+		<form>
+			<p>Email: <input type="email" name="email"/> </p>
+			<p>Password: <input type="password" name="pass"/> </p>
+			<input type="submit" value="Submit" id="submit"/>
+		</form>
+		
+		
+		<!-- input type list -->	
+	<h1>input type list</h1>
+	<ul>
+		<li>button</li>
+		<li>checkbox</li>
+		<li>color</li>
+		<li>date </li>
+		<li>datetime-local</li> 
+		<li>email </li>
+		<li>file</li>
+		<li>hidden</li>
+		<li>image</li>
+		<li>month </li>
+		<li>number </li>
+		<li>password</li>
+		<li>radio</li>
+		<li>range </li>
+		<li>reset</li>
+		<li>search</li>
+		<li>submit</li>
+		<li>tel</li>
+		<li>text</li>
+		<li>time </li>
+		<li>url</li>
+		<li>week </li>
+	</ul>	
+		
+		<!-- Script tags and javascript -->
+	<Script>
+		alert("pop");
+	</Script>
+		
+	
+		
+		
+	</body>	
+	
+</html>
