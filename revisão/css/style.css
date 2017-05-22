@@ -1,0 +1,92 @@
+
+
+h1{
+	padding:5pt;
+	color: orange;
+	background-color: black;
+	font-family: courier;
+	font-size: 3em;
+}
+
+p{
+	padding:3pt;
+	color:blue;
+	background-color:orange;
+	font-family: impact;
+	font-size: 1.5em;
+}
+
+#secondHeader{
+	background-color: maroon;
+}
+
+#secondParagraph{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+#header1{
+	font-family: serif;
+	font-style: normal;
+	font-weight:900;
+	color: red;
+}
+
+#header2{
+	font-family: sans-serif;
+	font-style: italic;	
+	font-weight:100;
+	color: #256480;
+	background-color:rgba(200, 200, 200, 0.8);
+}
+
+#header3{
+	font-family: monospace;
+	font-style: oblique;
+	font-weight:bolder;
+	color: rgb(255,100,33)
+}
+
+a:link{
+	font-family: Courier New, Courier, monospace;
+	color: rgb(50,100,30);
+}
+a:hover{
+	color: rgb(255,100,33);
+}
+a:visited{
+	color: rgb(50,100,250);
+}
+
+
+table{
+	background-color: #4c4c4c;
+	border: 1pt solid black;
+}
+
+td,th{
+	background-color: #256480;
+	color: #ccc;
+	width: 150pt;
+}
+th{
+	background-color: transparent;
+	}
+
+ul{
+	list-style-type: square;
+	}
+ul > ol{
+	list-style-type: circle;
+	}
+
+ol{
+	list-style-type: upper-roman;
+	}
+
+.change{
+	color: maroon;
+	background-color: transparent;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 1.5em;
+}
