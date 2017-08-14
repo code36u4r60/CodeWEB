@@ -15,7 +15,7 @@ $db = "phpCourse";
     connect to database with mysqli.
     do not use "localhost" for the host name, it only give a UNIX connection. "127.0.0.1" gives a TCP/IP connection
 */
-$conn = new mysqli("192.168.1.85", $user, $pwd, $db);
+$conn = new mysqli("127.0.0.1", $user, $pwd, $db);
 
 //STEP 2. creat a query
 $sql = "SELECT name FROM language";
