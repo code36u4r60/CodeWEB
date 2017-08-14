@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS phpCourse;
+
+CREATE DATABASE phpCourse;
+
+USE phpCourse;
+
+CREATE TABLE language(
+    ID MEDIUMINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(20)
+);
+
+INSERT INTO language(name) 
+    VALUES ('PHP'), ('C');
