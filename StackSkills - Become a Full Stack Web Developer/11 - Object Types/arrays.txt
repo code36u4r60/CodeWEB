@@ -1,0 +1,140 @@
+[1,2,3,4]
+[object Array]  [1, 2, 3, 4]
+0               1
+1               2
+2               3
+3               4
+length          4
+
+[]
+[object Array]  []
+length          0
+
+[2]
+[object Array]  [2]
+0               2
+length          1
+
+[1, "hello", true]
+[object Array]  [1, "hello", true]
+0               1
+1               "hello"
+2               true
+length          3
+
+[1, "hello", true, [1,2,3]]
+[object Array]  [1, "hello", true, Array[3]]
+0               1
+1               "hello"
+2               true
+3               [object Array] [...]
+    0           1
+    1           2
+    2           3
+    length      3
+length          4
+
+var a = ["John", "Paul", "George", "Ringo"]
+undefined
+
+a[0]
+"John"
+
+a[1]
+"Paul"
+
+a[2]
+"George"
+
+a[3]
+"Ringo"
+
+a.length
+4
+
+a[a.length] = "Yoko"
+"Yoko"
+
+a 
+[object Array]  ["John", "Paul", "George", "Ringo", "Yoko"]
+0               "John"
+1               "Paul"
+2               "George"
+3               "Ringo"
+4               "Yoko"
+length          5
+
+a.push("Pete")
+6
+
+a 
+[object Array]["John", "Paul", "George", "Ringo", "Yoko", "Pete"]
+0               "John"
+1               "Paul"
+2               "George"
+3               "Ringo"
+4               "Yoko"
+5               "Pete"
+length          6
+
+a.splice(4,1)
+[object Array]  ["Yoko"]
+0               "Yoko"
+length          1
+
+a 
+[object Array]["John", "Paul", "George", "Ringo", "Pete"]
+0               "John"
+1               "Paul"
+2               "George"
+3               "Ringo"
+4               "Pete"
+length          5
+
+a.splice(2,3)
+[object Array]  ["George", "Ringo", "Pete"]
+0               "George"
+1               "Ringo"
+2               "Pete"
+length          3
+
+a 
+[object Array]["John", "Paul"]
+0               "John"
+1               "Paul"
+length          2
+
+a.pop() ->remove o ultimo
+"Paul"
+
+a 
+[object Array]["John"]
+0               "John"
+length          1
+
+a = [5,2,4,1,1]
+[object Array]  [5, 2, 4, 1, 1]
+0               5
+1               2
+2               4
+3               1
+4               1
+length          5
+
+a.sort()
+[object Array]  [1, 1, 2, 4, 5]
+0               1
+1               1
+2               2
+3               4
+4               5
+length          5
+
+a
+[object Array]  [1, 1, 2, 4, 5]
+0               1
+1               1
+2               2
+3               4
+4               5
+length          5

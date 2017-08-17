@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script type="text/javascript">
+        var bankAccount = {
+            owner: "Ross",
+            type: "Savings",
+            balance: 100,
+            withdraw: function (amount) {
+                this.balance -= amount;
+            },
+            deposit: function (amount) {
+                this.balance += amount;
+            }
+        }
+
+        function BankAccount(owner, type) {
+            this.owner = owner;
+            this.type = type;
+            this.balance = 0;
+
+            this.withdraw = function (amount) {
+                this.balance -= amount;
+            };
+
+            this.deposit = function (amount) {
+                this.balance += amount;
+            }
+        }
+    </script>
+</body>
+
+</html>
