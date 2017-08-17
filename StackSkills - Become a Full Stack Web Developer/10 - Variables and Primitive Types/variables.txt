@@ -1,0 +1,42 @@
+var x = 10
+undefined
+
+x
+10
+
+var y = 2
+undefined
+
+x + y
+12
+
+x * y
+20
+
+x = x + 1
+11
+
+x++
+11
+
+x
+12
+
+var x# = 1
+Invalid character
+
+var x$_ = 1
+undefined
+
+var 1x = 1
+Expected identifier
+
+var x1 = 1
+undefined
+
+var _x = 1
+undefined
+
+var var = 1
+The use of a keyword for an identifier is invalid
+

@@ -1,0 +1,38 @@
+'hello'
+"hello"
+
+"hello"
+"hello"
+
+'"hello"'
+""hello""
+
+"it's"
+"it's"
+
+"Hello" + " World"
+Hello World
+
+"Hello".length
+5
+
+var s = "hello"
+underfined
+s.length
+5
+
+'it\'s'
+"it's"
+
+"\"hello\""
+""hello""
+
+"Hello\nWorld"
+"Hello
+World"
+
+"Hello\tWorld"
+"Hello	World"
+
+"\\"
+"\"

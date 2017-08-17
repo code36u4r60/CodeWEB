@@ -1,0 +1,46 @@
+Algumas operações testadas na Consola do Browser
+
+1 + 1
+2
+
+1 + 1 - 9
+-7
+
+6 * 7
+42
+
+36 / 6
+6
+
+37 % 6
+1
+
+8 % 2
+0
+
+1 + 2 * 8
+17
+
+4e3
+4000
+
+3.5e5
+350000
+
+Math.E
+2.718281828459045
+
+Math.abs(-5)
+5
+
+Math.pow(2, 4)
+16
+
+Number.MAX_VALUE
+1.7976931348623157e+308
+
+Number.NaN
+NaN
+
+Math.sqrt(-1)
+NaN

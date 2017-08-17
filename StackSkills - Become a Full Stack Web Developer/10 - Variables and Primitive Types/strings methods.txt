@@ -1,0 +1,62 @@
+var s = "hello";
+undefined
+
+s.charAt(0);
+"h"
+
+s.charAt(1);
+"e"
+
+s.charAt(5);
+""
+
+s.length
+5
+
+s[3]
+"l"
+
+var s = "www.google.com?q=cats"
+undefined
+
+s.indexOf(".");
+3
+
+s.indexOf("1");
+-1
+
+s.indexOf("oo");
+5
+
+s.lastIndexOf(".");
+10
+
+s.slice(4, 10)
+"google"
+
+s.substr(0, 3);
+"www"
+
+s.substr(1, 3);
+"ww."
+
+s.toUpperCase();
+"WWW.GOOGLE.COM?Q=CATS"
+
+s.toLowerCase();
+"www.google.com?q=cats"
+
+s.replace(".", "!");
+"www!google.com?q=cats"
+
+s.replace("oo", "!");
+"www.g!gle.com?q=cats"
+
+s.split(".")
+[object Array]  ["www", "google", "com?q=cats"]
+0               "www"
+1               "google"
+2               "com?q=cats"
+length          3
+
+
