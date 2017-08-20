@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script type="text/javascript">
+        function getRoot(text) {
+            var num = Number(text);
+
+            if (isNaN(num)) {
+                throw text + " is not a number";
+            }
+
+            if(num < 0){
+                throw num + " is not a positive number"
+            }
+            var root = Math.sqrt(num);
+            return root;
+        }
+
+        var text = "1";
+        try {
+            var root = getRoot(text);
+            alert(root);
+        } catch (err) {
+            alert("Error: " + err);
+        } finally{
+            alert('finally');
+        }
+
+        alert("exiting");
+
+    </script>
+
+</body>
+
+</html>
