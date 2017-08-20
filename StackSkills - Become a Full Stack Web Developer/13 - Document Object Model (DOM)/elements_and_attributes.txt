@@ -1,0 +1,50 @@
+ - document.getElementById('title')
+<h1 id="title">title</h1>
+
+- document.getElementsByClassName('paragraph')
+<HtmlCollection length="2">
+0   <p class="paragraph">Paragraph text 1</p>
+1   <p class="paragraph">Paragraph text 1</p>
+</HtmlCollection>
+
+- document.getElementsByClassName('paragraph')[0]
+<p class="paragraph">Paragraph text 1</p>
+
+- document.getElementsByClassName('paragraph')[1]
+<p class="paragraph">Paragraph text 1</p>
+
+- document.getElementsByTagName('ul')
+<HtmlCollection length="1">
+0   <ul>
+        <li>List element 1</li>
+        <li>List element 2</li>
+        <li>List element 3</li>
+    </ul>
+</HtmlCollection>
+
+- var ul = document.getElementsByTagName('ul')[0]
+undefined
+
+- ul.getElementsByTagName('li')[1]
+<li>List element 2</li>
+
+
+- var p = document.getElementsByClassName('paragraph')[0]
+undefined
+
+- p
+<p class="paragraph">Paragraph text 1</p>
+
+- p.innerText
+"Paragraph text 1"
+
+- p.tagName
+"P"
+
+- p.getAttribute('class')
+"paragraph"
+
+
+
+- document.getElementsByTagName('input')[0].value
+texto dentro do input

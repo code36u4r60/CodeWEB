@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script type="text/javascript">
+        var numClicks = 0;
+        function titleClicked() {
+            numClicks++;
+            document.getElementById('title').innerText = "numClicks = " + numClicks;
+        }
+        function mouseEnter(event) {
+            event.target.innerText = event.target.innerText + "*HOVER*";
+        }
+        function mouseLeave(event) {
+            event.target.innerText = event.target.innerText.replace("*HOVER*", "");
+        }
+
+        window.onload = function () {
+            document.getElementById('title').addEventListener('click', titleClicked);
+            var lis = document.getElementsByTagName('li');
+            for (var i = 0; i < lis.length; i++) {
+                var li = lis[i];
+                li.addEventListener('mouseenter', mouseEnter);
+                li.addEventListener('mouseleave', mouseLeave);
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1 id="title">title</h1>
+
+    <p class="paragraph">Paragraph text 1</p>
+    <p class="paragraph">Paragraph text 1</p>
+
+    <input type="text"></input>
+
+    <ul>
+        <li>List element 1</li>
+        <li>List element 2</li>
+        <li>List element 3</li>
+    </ul>
+</body>
+
+
+</html>

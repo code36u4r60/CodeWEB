@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script type="text/javascript">
+        function test(){
+            var title = document.getElementById('title');
+            title.innerText = "new title";
+        }
+
+        function test2(){
+            var ul = document.getElementsByTagName('ul')[0];
+            
+            var li = document.createElement('li');
+            var node = document.createTextNode('List element 4');
+            li.appendChild(node);
+
+            ul.appendChild(li);
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1 id="title">title</h1>
+
+    <p class="paragraph">Paragraph text 1</p>
+    <p class="paragraph">Paragraph text 1</p>
+
+    <input type="text"></input>
+
+    <ul>
+        <li>List element 1</li>
+        <li>List element 2</li>
+        <li>List element 3</li>
+    </ul>
+</body>
+
+
+</html>
