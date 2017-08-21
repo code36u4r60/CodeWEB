@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Manipulation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 id="title">title</h1>
+
+    <p class="paragraph">Paragraph text 1</p>
+    <p class="paragraph">Paragraph text 2</p>
+
+    <input type="text"></input>
+    <button onclick="test()">Test</button>
+
+    <ul>
+        <li>List element 1</li>
+        <li>List element 2</li>
+        <li>List element 3</li>
+        <li>List element 4</li>
+        <li>List element 5</li>
+    </ul>
+
+
+    <script>
+        /*alert($('#title').text());*/
+        /*alert($('ul').text());*/
+
+        function test() {
+            // alert($('input').val());
+            //alert($('button').attr('onclick'))
+            //$('#title').text('new title')
+            //$('p').html('<a href="#">Link</a>');
+            $('input').val('my value');
+        }
+    </script>
+</body>
+
+
+</html>
