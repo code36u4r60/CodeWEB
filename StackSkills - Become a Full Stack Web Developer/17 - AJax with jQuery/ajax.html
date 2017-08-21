@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function onDataReceived(data) {
+            console.log(data);
+
+            $('#name').text(data.name);
+            $('#city').text(data.city);
+            $('#weather').text(data.weather.weather);
+            $('#temperature').text(data.weather.temp);
+        }
+
+        $(document).ready(function () {
+
+            $('button').click(function () {
+                var url = 'http://services.faa.gov/airport/status/{CODE}?format=application/json'
+                .replace("{CODE}", $('input').val());
+                $.get(url, onDataReceived);
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <input placeholder="Enter airport code"></input>
+    <button>Get info</button>
+
+    <p>Airport name:</p>
+    <p id="name"></p>
+    <br/>
+
+    <p>City:</p>
+    <p id="city"></p>
+    <br/>
+
+    <p>Weather:</p>
+    <p id="weather"></p>
+    <br/>
+
+    <p>Temperature:</p>
+    <p id="temperature"></p>
+    <br/>
+
+
+</body>
+
+
+</html>

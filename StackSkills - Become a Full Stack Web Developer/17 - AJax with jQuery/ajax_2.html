@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function onDataReceived(data, status, xhr) {
+            console.log(data);
+            console.log(status);
+            console.log(xhr);
+
+            $('#name').text(data.name);
+            $('#city').text(data.city);
+            $('#weather').text(data.weather.weather);
+            $('#temperature').text(data.weather.temp);
+        }
+
+        function onError(xhr, status, error) {
+            console.log(xhr);
+            console.log(status);
+            console.log(error);
+
+            var msg;
+            if(error == "Internal Server Error"){
+                msg = xhr.responseJSON.Exception.Message;
+            }else if (status == 'timeout'){
+                msg = "The server took too long to respond."
+            }else{
+                msg = "Unable to communicate with the server."
+            }
+            alert(msg)
+        }
+
+        $(document).ready(function () {
+
+            $('button').click(function () {
+
+                var request = {
+                    url: 'http://services.faa.gov/airport/status/{CODE}'
+                        .replace("{CODE}", $('input').val()),
+                    type: 'GET',
+                    success: onDataReceived,
+                    headers: { Accept: 'application/json' },
+                    error: onError,
+                    timeout: 3000
+                };
+
+                $.ajax(request);
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <input placeholder="Enter airport code"></input>
+    <button>Get info</button>
+
+    <p>Airport name:</p>
+    <p id="name"></p>
+    <br/>
+
+    <p>City:</p>
+    <p id="city"></p>
+    <br/>
+
+    <p>Weather:</p>
+    <p id="weather"></p>
+    <br/>
+
+    <p>Temperature:</p>
+    <p id="temperature"></p>
+    <br/>
+
+
+</body>
+
+
+</html>
