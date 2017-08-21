@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            $('li').click(function () {
+                $(this).hide(500, function () { alert('done') });
+            });
+
+
+            $('button').click(function () {
+                //$('li').show(500);
+                //$('ul').toggle(100);
+                //$('ul').fadeOut(1000);
+                //$('ul').stop();
+                //$('ul').fadeToggle(1000);
+                //$('ul').slideUp(1000);
+                //$('ul').slideToggle(1000);
+                //
+                //
+                $('ul').stop()
+                    .slideToggle(1000)
+                    .slideToggle(1000);
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1 id="title">title</h1>
+
+    <p class="paragraph">Paragraph text 1</p>
+    <p class="paragraph">Paragraph text 2</p>
+
+    <input type="text"></input>
+
+    <button>Show</button>
+    <ul>
+        <li>List element 1</li>
+        <li>List element 2</li>
+        <li>List element 3</li>
+        <li>List element 4</li>
+        <li>List element 5</li>
+    </ul>
+</body>
+
+
+</html>

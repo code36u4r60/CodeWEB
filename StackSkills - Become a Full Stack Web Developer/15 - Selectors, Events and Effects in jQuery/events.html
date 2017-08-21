@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery - events </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('p').click(function () {
+                $(this).css('color', 'red');
+            });
+
+            $('li').dblclick(function () {
+                $(this).css('color', 'red');
+            });
+
+            /*
+            $('li').mouseenter(function () {
+                $(this).css('color', 'red');
+            });
+ 
+            $('li').mouseleave(function () {
+                $(this).css('color', 'black');
+            });
+            */
+            $('li').hover(function () {
+                $(this).css('color', 'red');
+            }, function () {
+                $(this).css('color', 'black');
+            });
+
+            $(document).keypress(function () {
+                console.log('press');
+            });
+
+
+            $(document).keyup(function () {
+                console.log('up');
+            });
+
+            $('input').focus(function(){
+                $(this).css('border', '1px solid red');
+            });
+
+            $('input').blur(function(){
+                $(this).css('border', '');
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <h1 id="title">title</h1>
+
+    <p class="paragraph">Paragraph text 1</p>
+    <p class="paragraph">Paragraph text 2</p>
+
+    <input type="text"></input>
+
+    <ul>
+        <li>List element 1</li>
+        <li>List element 2</li>
+        <li>List element 3</li>
+        <li>List element 4</li>
+        <li>List element 5</li>
+    </ul>
+
+</body>
+
+
+</html>
