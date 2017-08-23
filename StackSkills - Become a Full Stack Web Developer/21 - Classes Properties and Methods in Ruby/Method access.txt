@@ -1,0 +1,37 @@
+# Methods defined in Ruby classes my have:
+    - public access - the method is available anywhere the object is available. This is the default.
+    - protected access - the method is only available within the class definition and the definition of any subclass
+    - private access - the method has protected access, but cannot be called with an explicit receiver.
+
+ What's a receiver
+    - A receiver is an object upon which a method is being invoked
+    - In Ruby, the term "message" is used to refer to a method invocation. We say that we are "sending a message to an object." The objet is called the "message receiver" or just the "receiver."
+
+What's an explicit receiver?
+    - An explicit receiver is an object that is named when the message is sent.
+    class Test
+        def initialize(a) @a = a end
+
+        #receiver is implicit, self:
+        def getA_ver1() @a end
+
+        #receiver is explicit
+        def getA_ver2() self.a end
+    end
+
+
+##EXEMPLE
+    class Parent
+        private
+            def print_self
+                puts self
+            end
+    end
+
+    class Child < Parent
+        def test
+            print_self          #this work, receiver implicit
+            self.print_self     #this is an error
+                                #explicit receiver!
+        end
+    end
