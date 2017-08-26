@@ -1,0 +1,5 @@
+rails new people -d mysql
+
+cd people
+
+/bin/rails generate controller person index

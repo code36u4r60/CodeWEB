@@ -1,0 +1,50 @@
+# Resources
+    - A resource is a collection of objects havintg something in common:
+        » people
+        » blog articles
+        » tweets
+    - Resources can be Created, Read Updated and Deleted.
+    These are called CRURD operations.
+    - Resources are ReSTful. ReST is a stateless client-server protocol, often used for internet communication of data.
+
+# Adding a new resource
+    - Edit the routes.rb file
+    - Add a resource route:
+        » resources :resource_name
+    - run bin/rake routes to verify that the new resource routes are Created
+
+<# bin/rake routes
+    
+    ver img01.PNG
+    
+    - new, edit, show, and destroy are actions (methods) for the contacts resource that correspond to the Create, Update, Read, and Delete of CRURD
+        » A controller for the contacts resource must be created that contains an defines methods for these actions.
+    - creat corresponds to creating a new record in the contacts resouce.
+        » A model must be made for contacts, which defines the field names and types for the database table backing the resource.
+
+# Creating the controller
+    - Use the command
+        bin/rails generate controller <name_of_resource>
+    - The controller name must match the resource name exctly.
+    - This will generate a new file in the app/controllers
+        directory called <name_of_resource>_controller.rb
+        » For example, bin/rails generate controller contacts
+            generate contacts_controller.rb
+    - The controller class will be ContactsController, and will contain no properties or methods when created.
+
+# Error messages
+    - Navigating to localhost:3000/contacts/new results in the following exception:
+        |   Ver img2.PNG    |
+    - This is telling you that there is no new method defined in the ContactsController class.
+    - Adding the "new" method results in the following:
+        |   Ver img3.PNG    |
+        In other words, we must defne a view for contacts/new 
+
+# The new contacts view
+    - Creating a file named new.html.erb in the views/contacts directory clears the previous error.
+    - If the content of the file is 
+        <h1>New Contact... </h1>
+        then navigating to localhost/3000/contacts/new gives this:
+        New Contact...
+    - We're getting there!
+    
