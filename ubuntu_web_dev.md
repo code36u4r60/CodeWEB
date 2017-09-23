@@ -47,7 +47,7 @@
 - Visitar a web page [rvm.io](https://rvm.io/)
 - Install RVM: 
 - ```gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB```
-- ```\curl -sSL https://get.rvm.io | bash -s stable --rails```
+- ```\curl -sSL https://get.rvm.io | bash -s stable --rails```. Se copiar do site não esquecer de adicionar o ```--rails```
 - No fim da instalação vai aparecer uma menssagem "* To start usaing RVM you need to run ..." de copiar o comando entre __' '__
 - Antes de colar e executar esse comando deve editar a definições do terminal
     - ir __Terminal__ -> __Preferences__ -> __Profiles__
